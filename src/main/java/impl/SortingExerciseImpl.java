@@ -78,3 +78,8 @@ public class SortingExerciseImpl implements SortingExercise {
         return null;
     }
 }
+
+
+// Cieakwe:
+// metoda reverse i reverseREcursive
+// algorytm sorotwaania jakiś sobie klepnać
