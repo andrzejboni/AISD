@@ -102,7 +102,7 @@ public class AlgorithmExerciseImpl implements AlgorithmExercise {
     public String reverse(String text) { // Tekst wspak!
 
         char[] reverseText = new char[text.length() + 10];
-        char[] blabla = new char[text.length() - 1];
+        char[] blabla = new char[text.length()];
         int dlugosc = text.length() - 1;
         reverseText = text.toCharArray();
 
