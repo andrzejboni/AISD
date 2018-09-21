@@ -1,6 +1,7 @@
 import exercise.AlgorithmExercise;
 import exercise.SortingExercise;
 import impl.AlgorithmExerciseImpl;
+import impl.SearchingAlgorithmExercise;
 import impl.SortingExerciseImpl;
 import impl.ZaimplementujTablice;
 
@@ -70,6 +71,19 @@ public class Main {
         System.out.println(sortingExercise.insertSort(list));
         System.out.println(sortingExercise.insertSort2(list));
 
+ArrayList<Integer> myArrayList = new ArrayList<>();
+        myArrayList.add(12);
+        myArrayList.add(3);
+        myArrayList.add(25);
+        myArrayList.add(97819);
+        myArrayList.add(91919);
+        myArrayList.add(18719);
+        myArrayList.add(789119);
+        myArrayList.add(978119);
+        myArrayList.add(156819);
+
+        SearchingAlgorithmExercise searchingAlgorithmExercise = new SearchingAlgorithmExercise();
+        System.out.println(searchingAlgorithmExercise.binarySearch(myArrayList,25));
 
     }
 }

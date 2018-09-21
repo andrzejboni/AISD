@@ -5,27 +5,29 @@ import java.util.List;
 public class SearchingAlgorithmExercise {
 
     public boolean binarySearch(List<Integer> elements, int searchedElement) {
-        boolean isFoud = false;
-
+        boolean isFound = false;
+        if (elements.isEmpty()) {
+            return isFound;
+        }
         elements = new SortingExerciseImpl().insertSort2(elements);
-        int middle = (elements.size() + 1) / 2;
+        int middle = (elements.size() ) / 2;
 
 
         while (middle != 0) {
 
             if (elements.get(middle) == searchedElement) {
-                isFoud = true;
+                isFound = true;
                 break;
-            } else if (elements.get(middle) > searchedElement) {
-                elements = elements.subList(middle + 1, elements.size() - 1);
+            } else if (elements.get(middle) < searchedElement) {
+                elements = elements.subList(middle , elements.size() - 1);
 
             } else {
-                elements = elements.subList(0,middle-1);
+                elements = elements.subList(0, middle - 1);
             }
-
+            middle = (elements.size() + 1) / 2;
 
         }
-        return true;
+        return isFound;
     }
 
 }
