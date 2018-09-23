@@ -1,6 +1,7 @@
 package exercise;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface SortingExercise {
@@ -30,7 +31,7 @@ public interface SortingExercise {
      * @param unsorted
      * @return
      */
-    List<Integer> mergeSort(List<Integer> unsorted);
+    ArrayList<String> mergeSort(ArrayList<String> unsorted);
 
     /**
      * Metoda sortująca listę liczb sortowaniem szybkim
