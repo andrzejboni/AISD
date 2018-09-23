@@ -26,7 +26,6 @@ public class Main {
             list.add(156819);
 
 
-
             SortingExerciseImpl sortingExercise = new SortingExerciseImpl();
 
 
@@ -49,7 +48,6 @@ public class Main {
         sortingExercise.insertSort2(list);
         long estimatedTimeInsert2 = System.nanoTime() - startTimeInsert2;
         System.out.println("CZas dla insert  2   sortu to: " +estimatedTimeInsert2);
-
 
 
         long startTime = System.nanoTime();
