@@ -3,7 +3,7 @@ import exercise.SortingExercise;
 import impl.AlgorithmExerciseImpl;
 import impl.SearchingAlgorithmExercise;
 import impl.SortingExerciseImpl;
-import impl.ZaimplementujTablice;
+//import impl.ZaimplementujTablice;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,27 +37,27 @@ public class Main {
 
         Randomowe random = new Randomowe();
 
-        for (int i = 0; i < 50; i++) {
-            lista1.add(random.randomWithRange(1, 100));
-        }
-
-
-        long startTimeInsert = System.nanoTime();
-        sortingExercise.insertSort(list);
-        long estimatedTimeInsert = System.nanoTime() - startTimeInsert;
-        System.out.println("CZas dla insert sortu to: " + estimatedTimeInsert);
+//        for (int i = 0; i < 50; i++) {
+//            lista1.add(random.randomWithRange(1, 100));
+//        }
+//
+//
+//        long startTimeInsert = System.nanoTime();
+//        sortingExercise.insertSort(list);
+//        long estimatedTimeInsert = System.nanoTime() - startTimeInsert;
+//        System.out.println("CZas dla insert sortu to: " + estimatedTimeInsert);
 
 
         Randomowe lista2 = new Randomowe();
 
-        for (int i = 0; i < 50; i++) {
-            list.add(lista2.randomWithRange(1, 100));
-        }
-
-        long startTime = System.nanoTime();
-        sortingExercise.bubbleSort(list);
-        long estimatedTime = System.nanoTime() - startTime;
-        System.out.println("Czas dla sortowania bąbelkowego to: " + estimatedTime);
+//        for (int i = 0; i < 50; i++) {
+//            list.add(lista2.randomWithRange(1, 100));
+//        }
+//
+//        long startTime = System.nanoTime();
+//        sortingExercise.bubbleSort(list);
+//        long estimatedTime = System.nanoTime() - startTime;
+//        System.out.println("Czas dla sortowania bąbelkowego to: " + estimatedTime);
 
 
         Randomowe lista3 = new Randomowe();
@@ -67,15 +67,15 @@ public class Main {
         }
 
 
-        ZaimplementujTablice bubble = new ZaimplementujTablice();
+//        ZaimplementujTablice bubble = new ZaimplementujTablice();
         long startTimeInsert2 = System.nanoTime();
         sortingExercise.insertSort2(list);
         long estimatedTimeInsert2 = System.nanoTime() - startTimeInsert2;
         System.out.println("CZas dla insert  2   sortu to: " + estimatedTimeInsert2);
 
-        System.out.println(sortingExercise.bubbleSort(list));
+//        System.out.println(sortingExercise.bubbleSort(list));
         System.out.println(sortingExercise.insertSort(list));
-        System.out.println(sortingExercise.insertSort2(list));
+//        System.out.println(sortingExercise.insertSort2(list));
 
 
         SearchingAlgorithmExercise searchingAlgorithmExercise = new SearchingAlgorithmExercise();
