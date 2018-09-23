@@ -26,30 +26,9 @@ public class SortingExerciseImpl implements SortingExercise {
         return unsorted;
     }
 
-    @Override
-    public List<Integer> insertSort(List<Integer> unsorted) {
-        int a;
-        int b;
-        for (int i = 0; i < unsorted.size() - 1; i++) {
-            if (unsorted.get(i) > unsorted.get(i + 1)) {
-                a = unsorted.get(i);
-                b = unsorted.get(i + 1);
-                unsorted.set(i, b);
-                unsorted.set(i + 1, a);
-                for (int k = 0; k < i; i--) {
-                    if (unsorted.get(i) < unsorted.get(i - 1)) {
-                        a = unsorted.get(i);
-                        b = unsorted.get(i - 1);
-                        unsorted.set(i, b);
-                        unsorted.set(i - 1, a);
-                    }
-                }
-            }
-        }
-        return unsorted;
-    }
 
-    public List<Integer> insertSort2(List<Integer> unsorted) {
+
+    public List<Integer> insertSort(List<Integer> unsorted) {
         for (int i = 0; i < unsorted.size(); i++) {
             int toInsert = unsorted.get(i);
             int j = i - 1;

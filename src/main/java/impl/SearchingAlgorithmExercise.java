@@ -9,7 +9,7 @@ public class SearchingAlgorithmExercise {
         if (elements.isEmpty()) {
             return isFound;
         }
-        elements = new SortingExerciseImpl().insertSort2(elements);
+        elements = new SortingExerciseImpl().insertSort(elements);
         int middle = (elements.size() ) / 2;
 
 

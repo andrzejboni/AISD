@@ -6,6 +6,7 @@ import impl.SortingExerciseImpl;
 //import impl.ZaimplementujTablice;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -41,18 +42,23 @@ public class Main {
 //            lista1.add(random.randomWithRange(1, 100));
 //        }
 //
+////
+
+        Randomowe lista3 = new Randomowe();
+
+        for (int i = 0; i < 40000; i++) {
+            list.add(lista3.randomWithRange(1, 10000));
+        }
+
+        Randomowe lista2 = new Randomowe();
+
+
 //
 //        long startTimeInsert = System.nanoTime();
 //        sortingExercise.insertSort(list);
 //        long estimatedTimeInsert = System.nanoTime() - startTimeInsert;
 //        System.out.println("CZas dla insert sortu to: " + estimatedTimeInsert);
 
-
-        Randomowe lista2 = new Randomowe();
-
-//        for (int i = 0; i < 50; i++) {
-//            list.add(lista2.randomWithRange(1, 100));
-//        }
 //
 //        long startTime = System.nanoTime();
 //        sortingExercise.bubbleSort(list);
@@ -60,21 +66,20 @@ public class Main {
 //        System.out.println("Czas dla sortowania bąbelkowego to: " + estimatedTime);
 
 
-        Randomowe lista3 = new Randomowe();
 
-        for (int i = 0; i < 50; i++) {
-            list.add(lista3.randomWithRange(1, 100));
-        }
+//        long startTime4 = System.nanoTime();
+//        Collections.sort(list);
+//        long estimatedTime4 = System.nanoTime() - startTime4;
+//        System.out.println("Czas dla MERGE SORTu to: " + estimatedTime4);
 
 
-//        ZaimplementujTablice bubble = new ZaimplementujTablice();
-        long startTimeInsert2 = System.nanoTime();
-        sortingExercise.insertSort2(list);
-        long estimatedTimeInsert2 = System.nanoTime() - startTimeInsert2;
-        System.out.println("CZas dla insert  2   sortu to: " + estimatedTimeInsert2);
+//
+////        ZaimplementujTablice bubble = new ZaimplementujTablice();
 
+
+//        System.out.println(list);
 //        System.out.println(sortingExercise.bubbleSort(list));
-        System.out.println(sortingExercise.insertSort(list));
+//        System.out.println(sortingExercise.insertSort(list));
 //        System.out.println(sortingExercise.insertSort2(list));
 
 
