@@ -44,13 +44,13 @@ public class Main {
 //
 ////
 
-        Randomowe lista3 = new Randomowe();
-
-        for (int i = 0; i < 40000; i++) {
-            list.add(lista3.randomWithRange(1, 10000));
-        }
-
-        Randomowe lista2 = new Randomowe();
+//        Randomowe lista3 = new Randomowe();
+//
+//        for (int i = 0; i < 40000; i++) {
+//            list.add(lista3.randomWithRange(1, 10000));
+//        }
+//
+//        Randomowe lista2 = new Randomowe();
 
 
 //
@@ -83,8 +83,8 @@ public class Main {
 //        System.out.println(sortingExercise.insertSort2(list));
 
 
-        SearchingAlgorithmExercise searchingAlgorithmExercise = new SearchingAlgorithmExercise();
-        System.out.println(searchingAlgorithmExercise.binarySearch(myArrayList, 25));
+//        SearchingAlgorithmExercise searchingAlgorithmExercise = new SearchingAlgorithmExercise();
+//        System.out.println(searchingAlgorithmExercise.binarySearch(myArrayList, 25));
 
     }
 }
