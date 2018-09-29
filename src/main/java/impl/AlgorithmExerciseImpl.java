@@ -97,6 +97,7 @@ public class AlgorithmExerciseImpl implements AlgorithmExercise {
 
         return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
 
+
     }
 
     public String reverse(String text) { // Tekst wspak!
